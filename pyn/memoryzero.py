@@ -13,7 +13,7 @@ class Driver:
     
     def c__dump(self, sd):
         self.store.append(sd)
-        return self.store[-1] # get last object
+        return len(self.store)-1 # get last object
     
     def c__load(self, memindx):
         return self.store[memindx]

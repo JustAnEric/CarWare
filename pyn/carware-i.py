@@ -5,12 +5,11 @@ memory_ = mem0()
 def mkd_(dir):
     print(f"| MKDIR | {dir}")
     return os.mkdir(dir)
-    
 
 print("[0xc00] Loading temporary data into memory...")
 
 import os
-idx_install_path = memory_.mkobj(Literal["/etc/carware"])
+idx_install_path = memory_.mkobj("/etc/carware")
 
 print("Installing Carware (you may be prompted to enter root password)")
 mkd_('./build')
@@ -29,9 +28,9 @@ for i in [
     ( "carware.py"    ),
     ( "memoryzero.py" )
 ]:
-    print(f"| COPY | ./{i[0]} ==> {memory_.ldobj(idx_install_path)}/{i[0]}")
-    os.system(f'sudo cp ./{i[0]} {memory_.ldobj(idx_install_path)}/{i[0]}')
-    print(f"| COPY | Finished: ./{i[0]} ==> {memory_.ldobj(idx_install_path)}/{i[0]}")
+    print(f"| COPY | ./{i} ==> {memory_.ldobj(idx_install_path)}/{i}")
+    os.system(f'sudo cp ./{i} {memory_.ldobj(idx_install_path)}/{i}')
+    print(f"| COPY | Finished: ./{i} ==> {memory_.ldobj(idx_install_path)}/{i}")
     
 print("[1xc00] Dumping temporary data from memory...")
 memory_.clrmem()
