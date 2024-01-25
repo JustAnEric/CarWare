@@ -1,5 +1,7 @@
 # carware
-Est. 24/01/24
+_est._ 24/01/24
+**_made with ❤️ by Eric_**
+
 ## hardware for your old cars
 The CarWare project supports different older cars and will add support for a custom build of Apple CarPlay and Android Auto, configure it however you would like.
 
