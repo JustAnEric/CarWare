@@ -1,0 +1,24 @@
+{
+  "name": "carware",
+  "version": "1.0.0",
+  "description": "a simple car software to provide support for older cars with Android Auto and Apple Carplay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "bash ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justaneric/carware.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justaneric/carware/issues"
+  },
+  "homepage": "https://github.com/justaneric/carware#readme",
+  "devDependencies": {
+    "electron": "^28.1.4"
+  }
+}

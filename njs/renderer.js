@@ -1,0 +1,2 @@
+document.getElementById('chrome-version').innerText = document.getElementById('chrome-version').innerText.replaceAll('{{ver}}', versions.chrome());
+document.getElementById('node-version').innerText = document.getElementById('node-version').innerText.replaceAll('{{ver}}', versions.node());

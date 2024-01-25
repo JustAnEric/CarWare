@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carware</title>
+</head>
+<body>
+    <p>I am just a simple window for CarWare. Set me up!</p>
+    <button type="button">Set Up CarWare</button>
+    <span>Detected Car: AUDI Q SERIES 5 MODEL</span>
+    <span id="chrome-version">Renderer (Chrome OpenGL) Version: {{ver}}</span>
+    <span id="node-version">Server (NodeJS) Version: {{ver}}</span>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(30deg, #444, purple);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100%;
+            margin: 0 auto;
+            font-size: 21px;
+        }
+
+        html {
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+    <script src="../renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "Opening CarWare...";
+npm start;
